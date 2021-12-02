@@ -2,7 +2,8 @@ import random
 import time
 import re
 
-
+posibles_palabras = ['arbol', 'cacahuete', 'piscina', 'cocodrilo',
+                     'escritorio', 'automovil', 'serpiente']
 pa = re.compile('^[a-z]+$')
 limpiar = lambda: print('\n' * 50)
 print('Bienvenido al juego del ahorcado.')
@@ -80,7 +81,5 @@ def menu():
         else:
             print('No has elegido una opción correcta. Vuelve a intentarlo.')
             time.sleep(1)
-posibles_palabras = ['arbol', 'cacahuete', 'piscina', 'cocodrilo',
-                     'escritorio', 'automovil', 'serpiente']
 
 menu()
